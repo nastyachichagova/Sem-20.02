@@ -6,7 +6,8 @@
 
 bool Cond(int a){return a % 2 != 0;};
 
-std::vector<int> func(std::vector<int> &v, std::list<int> &l){
+template <typename T>
+std::vector<T> func(std::vector<T> &v, std::list<T> &l){
     l.remove_if(Cond);
 
     std::vector<int>::iterator it1;
