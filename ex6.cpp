@@ -3,7 +3,8 @@
 //
 
 #include "ex6.h"
-std::list<int> def (std::vector<int> &v, std::list<int> &l){
+template <typename T>
+std::list<T> def (std::vector<T> &v, std::list<T> &l){
     auto it1 = v.end() - 1;
     auto it2 = l.begin();
 
